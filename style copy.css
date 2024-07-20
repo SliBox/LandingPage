@@ -1,0 +1,101 @@
+
+
+html, body {
+    height: 98%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 20px auto;
+    height: calc(100% - 40px);
+    max-width: 1000px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup {
+    width: 300px; /* Chiều rộng cụ thể */
+    height: auto; /* Chiều cao cụ thể */
+    background-color: white; /* Màu nền cho popup */
+    border: 1px solid #ccc; /* Đường viền */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Bóng mờ */
+    padding: 20px; /* Đệm trong */
+    box-sizing: border-box; 
+    
+}
+
+
+
+.notification-container {
+    max-width: 600px;
+    margin: auto;
+    
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.login-container,
+.notify-popup,
+.data-manager-controller,
+.notification-container,
+.ads-manager-container {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.login-container{
+    width: 400px;
+    
+}
+
+
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    display: block;
+    color: #333;
+}
+
+

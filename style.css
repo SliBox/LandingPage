@@ -1,0 +1,137 @@
+html, body {
+    height: calc(100% - 100px); /* Đảm bảo rằng các phần tử cha có chiều cao đầy đủ */
+    margin: 0; /* Xóa các khoảng cách mặc định */
+    padding: 0; /* Xóa đệm mặc định */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    display: block;
+    color: #333;
+}
+
+.container {
+    position: relative; /* Cho phép các popup được định vị tương đối */
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Căn giữa các phần tử theo chiều dọc */
+    background-color: #f9f9f9; /* Màu nền tùy chọn */
+    border-radius: 8px;
+    overflow: hidden; /* Ngăn các phần tử con vượt ra ngoài container */
+}
+
+.page-title {
+    text-align: center; /* Căn giữa tiêu đề trang */
+}
+.top-layer {
+    position: relative; /* hoặc absolute, fixed, hoặc sticky */
+    z-index: 1000; /* Giá trị cao để đảm bảo nó nằm trên các phần tử khác */
+}
+
+.options {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center; /* Căn giữa các nút theo chiều ngang */
+    gap: 1%; /* Khoảng cách giữa các nút */
+    margin: auto;
+    height: 62px;
+}
+.option-button{
+    width: 33%;
+}
+
+.popup {
+    position: absolute; /* Định vị tuyệt đối so với .container */
+    top: 50%; /* Đặt ở giữa chiều cao của .container */
+    left: 50%; /* Đặt ở giữa chiều rộng của .container */
+    transform: translate(-50%, -50%); /* Di chuyển lùi lại để căn giữa hoàn hảo */
+    width: auto; /* Chiều rộng cụ thể */
+    height: auto; /* Chiều cao tự động */
+    background-color: white; /* Màu nền cho popup */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Bóng mờ */
+    padding: 20px; /* Đệm trong */
+    box-sizing: border-box;
+    text-align: center;
+    display: none; /* Bắt đầu ẩn và hiển thị qua JavaScript */
+    min-width: 350px;
+    min-height: 270px;
+}
+
+.popup-horizontal-button{
+    width: calc((100% - 60px)/2);
+    height: auto;
+    margin: 10px;
+}
+
+.hidden {
+    display: none; /* Kiểm soát hiển thị thông qua JavaScript */
+}
+
+.login-container, .admin-controller, .alert-popup, .veritify-popup {
+    align-self: center; /* Căn giữa các popup theo chiều ngang trong container */
+}
+
+input[type="text"], input[type="password"], textarea {
+    width: calc(100% - 20px); /* Chiều rộng tối đa của các phần tử nhập liệu */
+    margin: 5px 0; /* Khoảng cách dọc giữa các phần tử nhập */
+    padding: 8px; /* Đệm cho phần tử nhập để dễ sử dụng hơn */
+}
+
+.document-input{
+    width: calc(100% - 20px); /* Chiều rộng của textarea */
+    min-height: 32px;
+    max-height : 500px;
+    height: 100px;
+    resize: vertical;
+}
+
+.json-data-file-input{
+    width: calc(100% - 40px); /* Chiều rộng tối đa của các phần tử nhập liệu */
+    margin: 5px 0; /* Khoảng cách dọc giữa các phần tử nhập */
+    padding: 8px; /* Đệm cho phần tử nhập để dễ sử dụng hơn */
+}
+
+.login-button{
+    width: 100px;
+}
+
+
+
+.admin-controller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 20px auto;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.fade{
+    height: 100%;
+    width: 100%;
+    color: #0000000e;
+}

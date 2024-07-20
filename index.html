@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="module"  src="./script.js">
+        import Script from './script.js'
+    </script>
+
+</head>
+
+
+
+<body>
+    <div class = "head">
+        <h1 class = "page-title"> Tool Admin </h1>
+
+        <div class = "options">
+            <button class = "option-button" onclick="Script.setActiveTag(0)">Data Manager</button>
+            
+            <button class = "option-button" onclick="Script.setActiveTag(1)">Send Notify</button>
+            <button class = "option-button" onclick="Script.setActiveTag(2)">Ads Manager</button>
+            <button class = "option-button" onclick="Script.setActiveTag(3)">Setup</button>
+            <button class = "option-button" onclick="Script.setActiveTag(4)">Data Key Manager</button>
+            <button class = "option-button" onclick="Script.sendLogOutMess()">Account</button>
+        </div>
+
+    </div>
+    <div class = "container">
+        <div class="login-container popup hidden">
+            <h2>Admin Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button class = "popup-horizontal-button" onclick="Script.login()">Login</button>
+        </div>
+    
+        <div class="admin-controller hidden ">
+            <div class="data-manager popup tag0">
+                <h2>Data Manager</h2>
+                <input type="file" id = "json-data-file-input" class="json-data-file-input" accept=".json">
+                <button class = "popup-horizontal-button" onclick="Script.downLoadData()">Download Data</button>
+                <button class = "popup-horizontal-button" onclick="Script.upLoadData()">Upload Data</button>
+            </div>
+            
+            <div class="list-manager popup tag4">
+                <h2>List Manager</h2>
+                <ul id="string-list">
+                    <!-- Các mục trong danh sách sẽ được thêm vào đây -->
+                </ul>
+                <input type="text" id="new-item-input" placeholder="Add a new item">
+                <button class="popup-horizontal-button" onclick="addItem()">Add Item</button>
+            </div>
+        </div>
+
+        <div class = "fade"></div>
+    
+        <div class="alert-popup popup hidden top-layer">
+            <h2>Thông báo</h2>
+            <p id="alert-content"></p>
+            <button class = "popup-horizontal-button" onclick="Script.alertPopupConfirm()">Xác nhận</button>
+        </div>
+        
+        <div class="verify-popup popup hidden top-layer">
+            <h2>Xác nhận</h2>
+            <p id="verify-content"></p>
+            <button class = "popup-horizontal-button" onclick="Script.verifyPopupCancel()">Cancel</button>
+            <button class = "popup-horizontal-button" onclick="Script.verifyPopupConfirm()">Xác nhận</button>
+        </div>
+    </div>
+
+    
+    
+</body>
+
+</html>
