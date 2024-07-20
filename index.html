@@ -1,79 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | LandingPage</title>
+  </head>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
+    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/LandingPage.loader.js"></script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="./style.css">
+        var canvas = document.querySelector("#unity-canvas");
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        canvas.style.position = "fixed";
 
-    <script type="module"  src="./script.js">
-        import Script from './script.js'
+        document.body.style.textAlign = "left";
+      }
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/LandingPage.data",
+        frameworkUrl: "Build/LandingPage.framework.js",
+        codeUrl: "Build/LandingPage.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "SliBoxSoft",
+        productName: "LandingPage",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
     </script>
-
-</head>
-
-
-
-<body>
-    <div class = "head">
-        <h1 class = "page-title"> Tool Admin </h1>
-
-        <div class = "options">
-            <button class = "option-button" onclick="Script.setActiveTag(0)">Data Manager</button>
-            
-            <button class = "option-button" onclick="Script.setActiveTag(1)">Send Notify</button>
-            <button class = "option-button" onclick="Script.setActiveTag(2)">Ads Manager</button>
-            <button class = "option-button" onclick="Script.setActiveTag(3)">Setup</button>
-            <button class = "option-button" onclick="Script.setActiveTag(4)">Data Key Manager</button>
-            <button class = "option-button" onclick="Script.sendLogOutMess()">Account</button>
-        </div>
-
-    </div>
-    <div class = "container">
-        <div class="login-container popup hidden">
-            <h2>Admin Login</h2>
-            <input type="text" id="username" placeholder="Username">
-            <input type="password" id="password" placeholder="Password">
-            <button class = "popup-horizontal-button" onclick="Script.login()">Login</button>
-        </div>
-    
-        <div class="admin-controller hidden ">
-            <div class="data-manager popup tag0">
-                <h2>Data Manager</h2>
-                <input type="file" id = "json-data-file-input" class="json-data-file-input" accept=".json">
-                <button class = "popup-horizontal-button" onclick="Script.downLoadData()">Download Data</button>
-                <button class = "popup-horizontal-button" onclick="Script.upLoadData()">Upload Data</button>
-            </div>
-            
-            <div class="list-manager popup tag4">
-                <h2>List Manager</h2>
-                <ul id="string-list">
-                    <!-- Các mục trong danh sách sẽ được thêm vào đây -->
-                </ul>
-                <input type="text" id="new-item-input" placeholder="Add a new item">
-                <button class="popup-horizontal-button" onclick="addItem()">Add Item</button>
-            </div>
-        </div>
-
-        <div class = "fade"></div>
-    
-        <div class="alert-popup popup hidden top-layer">
-            <h2>Thông báo</h2>
-            <p id="alert-content"></p>
-            <button class = "popup-horizontal-button" onclick="Script.alertPopupConfirm()">Xác nhận</button>
-        </div>
-        
-        <div class="verify-popup popup hidden top-layer">
-            <h2>Xác nhận</h2>
-            <p id="verify-content"></p>
-            <button class = "popup-horizontal-button" onclick="Script.verifyPopupCancel()">Cancel</button>
-            <button class = "popup-horizontal-button" onclick="Script.verifyPopupConfirm()">Xác nhận</button>
-        </div>
-    </div>
-
-    
-    
-</body>
-
+  </body>
 </html>
