@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchChat - Kết Nối Bất Ngờ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 10px;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1,
+        h2 {
+            color: #4f9bec;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .icon {
+            font-size: 24px;
+        }
+
+        a {
+            color: #4e9bed;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .top {
+            position: relative;
+            text-align: center;
+            /* Căn giữa các thành phần trong .top */
+            margin-bottom: 20px;
+            /* Thêm khoảng cách phía dưới */
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: -50px;
+            /* Cho avatar nổi bật lên ảnh bìa */
+        }
+
+        .avatar {
+            border-radius: 50%;
+            width: 35%;
+            /* Kích thước cố định cho avatar */
+            height: auto;
+            border: 5px solid white;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(80%);
+            /* Căn giữa avatar theo chiều ngang và dịch xuống một nửa chiều cao */
+        }
+
+        .page-title {
+            padding-top: 150px;
+            /* Đẩy tiêu đề xuống dưới để không bị chèn lên avatar */
+            margin: 0;
+            font-size: 24px;
+            /* Điều chỉnh kích thước font chữ cho tiêu đề */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0078D4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            /* Thêm khoảng cách phía trên nút */
+        }
+
+        .button:hover {
+            background-color: #0056a3;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top">
+            <img src="../cover-photo.png" alt="MatchChat Cover Photo" class="header-image">
+            <img src="../avatar.png" alt="MatchChat Avatar" class="avatar">
+            <h1 class="page-title">Match Chat VN
+
+            </h1>
+
+            <a href="/" class="button">
+                Trang chủ
+            </a>
+
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="YOUR_NONCE"></script>
+            <div class="home" data-href="https://www.facebook.com/people/MatchChat-VN/61561352387511/"
+                data-tabs="timeline" data-width="" data-height="" data-small-header="false"
+                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            </div>
+
+
+
+        </div>
+
+        <div class="content">
+            <h1>Điều Khoản Sử Dụng Dịch Vụ</h1>
+            <p>Chào mừng bạn đến với MatchChat VN, nền tảng kết nối người dùng thông qua tin nhắn. Khi sử dụng dịch vụ
+                của chúng tôi, bạn đồng ý tuân theo các điều khoản và điều kiện được nêu dưới đây. Vui lòng đọc kỹ các
+                điều khoản này trước khi sử dụng dịch vụ của chúng tôi.</p>
+
+            <h2>1. Điều Khoản Chung</h2>
+            <p><strong>Mục Đích Dịch Vụ:</strong> Kết nối, chia sẻ, trò chuyện với người lạ từ mọi miền đất nước.</p>
+            <p><strong>Chấp Nhận Điều Khoản:</strong> Bằng việc sử dụng dịch vụ của chúng tôi, bạn chấp nhận bị ràng
+                buộc bởi các điều khoản này, bao gồm các chính sách bảo mật và quyền riêng tư của chúng tôi.</p>
+
+            <h2>2. Quyền Riêng Tư và Bảo Mật</h2>
+            <p><strong>Thu Thập Thông Tin:</strong> Chúng tôi thu thập thông tin cần thiết để cung cấp dịch vụ, bao gồm
+                nhưng không giới hạn tên, địa chỉ email và nội dung các tin nhắn.</p>
+            <p><strong>Bảo Mật Dữ Liệu:</strong> Chúng tôi cam kết bảo vệ dữ liệu cá nhân của bạn và chỉ sử dụng các
+                thông tin này cho mục đích cải thiện dịch vụ.</p>
+
+            <h2>3. Sử Dụng Dịch Vụ</h2>
+            <p><strong>Trách Nhiệm Người Dùng:</strong> Bạn chịu trách nhiệm về nội dung các tin nhắn mà bạn gửi qua nền
+                tảng của chúng tôi. Bạn đồng ý không sử dụng dịch vụ cho các hoạt động bất hợp pháp hoặc lừa đảo.</p>
+            <p><strong>Giới Hạn Trách Nhiệm:</strong> MatchChat VN không chịu trách nhiệm về các hành vi sử dụng dịch vụ
+                không phù hợp hoặc các hậu quả pháp lý phát sinh do hành vi của người dùng.</p>
+
+            <h2>4. Điều Chỉnh và Ngừng Cung Cấp Dịch Vụ</h2>
+            <p><strong>Thay Đổi Điều Khoản:</strong> Chúng tôi có quyền thay đổi các điều khoản sử dụng tại bất kỳ thời
+                điểm nào. Sự thay đổi sẽ có hiệu lực ngay khi được đăng tải trên trang này.</p>
+            <p><strong>Ngừng Cung Cấp Dịch Vụ:</strong> Chúng tôi có thể ngừng cung cấp dịch vụ cho bất kỳ người dùng
+                nào mà không cần thông báo trước nếu người đó vi phạm các điều khoản sử dụng.</p>
+
+            <h2>5. Pháp Lý</h2>
+            <p><strong>Giải Quyết Tranh Chấp:</strong> Mọi tranh chấp phát sinh từ việc sử dụng dịch vụ sẽ được giải
+                quyết theo pháp luật Việt Nam.</p>
+        </div>
+
+
+
+    </div>
+</body>
+
+<script>
+    openUrl = (url, blank) => {
+        window.open(url, blank ? "_blank" : "")
+    }
+</script>
+
+</html>
