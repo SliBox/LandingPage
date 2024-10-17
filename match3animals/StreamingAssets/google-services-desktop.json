@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "208945867239",
+    "project_id": "pet-paradise---match3",
+    "storage_bucket": "pet-paradise---match3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208945867239:android:25f9c2ba7f22fad421b542",
+        "android_client_info": {
+          "package_name": "com.sb.petparadise.mergeanimals.match3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208945867239-1a4kutcb7a3apnmbnet8282ueuh0hjfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa5Ym-Wl6PeUpYVd9X55F5ObKsAkmQt5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208945867239-1a4kutcb7a3apnmbnet8282ueuh0hjfi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Pet Paradise - Merge Animals -  Match 3",
+    "short_name": "Pet Paradise - Merge Animals -  Match 3",
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#FFFFFF",
+    "theme_color": "#000",
+    "description": "Pet Paradise",
+    "icons": [{
+      "src": "TemplateData/icons/unity-logo-dark.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }]
+  }
