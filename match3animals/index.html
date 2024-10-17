@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Match3 Animal WebGL.loader.js";
+      var loaderUrl = buildUrl + "/match3animals.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Match3 Animal WebGL.data.br",
-        frameworkUrl: buildUrl + "/Match3 Animal WebGL.framework.js.br",
-        codeUrl: buildUrl + "/Match3 Animal WebGL.wasm.br",
+        dataUrl: buildUrl + "/match3animals.data",
+        frameworkUrl: buildUrl + "/match3animals.framework.js",
+        codeUrl: buildUrl + "/match3animals.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "SliBox",
         productName: "Pet Paradise - Merge Animals -  Match 3",
@@ -84,7 +84,7 @@
         document.getElementsByTagName('head')[0].appendChild(meta);
       }
 
-      canvas.style.background = "url('" + buildUrl + "/Match3 Animal WebGL.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/match3animals.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");

@@ -1,9 +1,9 @@
 const cacheName = "SliBox-Pet Paradise - Merge Animals -  Match 3-1.2";
 const contentToCache = [
-    "Build/Match3 Animal WebGL.loader.js",
-    "Build/Match3 Animal WebGL.framework.js.br",
-    "Build/Match3 Animal WebGL.data.br",
-    "Build/Match3 Animal WebGL.wasm.br",
+    "Build/match3animals.loader.js",
+    "Build/match3animals.framework.js",
+    "Build/match3animals.data",
+    "Build/match3animals.wasm",
     "TemplateData/style.css"
 
 ];
